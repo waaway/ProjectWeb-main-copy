@@ -1,0 +1,5 @@
+.centered-column p {
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+    color: #007bff; /* สีลิงก์ */
+    margin: 10px 0;
+  }

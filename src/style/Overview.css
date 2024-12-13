@@ -1,0 +1,599 @@
+.bgoverview{
+    position: relative;
+    background: url('/public/image/bgmain.jpg') no-repeat center center fixed; /* ตั้งค่าพื้นหลังเป็นรูปภาพ */
+    background-size: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมด */
+    z-index: 2;
+    width: 100%;
+    height: 982px;
+}
+.bgoverview::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 982px;
+    background-color: rgba(0, 0, 0, 0.6);     /* สีดำโปร่งแสงทับพื้นหลัง */
+    z-index: -1;
+  }
+
+.logins-button{
+    background-color: white; /* สีพื้นหลัง */
+    color: black ; /* สีข้อความ */
+    height: 50px;
+    width: 150px;
+    border: none; /* ไม่มีเส้นขอบ */
+    border-radius: 5px; /* มุมโค้งมน */
+    cursor: pointer; /* เปลี่ยนเมาส์เมื่อ hover */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* การเปลี่ยนแปลงแบบนุ่มนวล */
+}
+
+.register-buttonnn{
+    background-color: white; /* สีพื้นหลัง */
+    color: black ; /* สีข้อความ */
+    height: 50px;
+    width: 150px;
+    border: none; /* ไม่มีเส้นขอบ */
+    border-radius: 5px; /* มุมโค้งมน */
+    cursor: pointer; /* เปลี่ยนเมาส์เมื่อ hover */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    position: absolute;
+    right: 180px;
+    top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* การเปลี่ยนแปลงแบบนุ่มนวล */
+}
+
+.profile-button{
+    background-color: white; /* สีพื้นหลัง */
+    color: black ; /* สีข้อความ */
+    height: 50px;
+    width: 150px;
+    border: none; /* ไม่มีเส้นขอบ */
+    border-radius: 5px; /* มุมโค้งมน */
+    cursor: pointer; /* เปลี่ยนเมาส์เมื่อ hover */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* การเปลี่ยนแปลงแบบนุ่มนวล */
+  }
+
+.logohotel{  
+    display: flex;
+    flex-direction: column; /* จัดให้อยู่ในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวนอน */
+    padding-top: 20px; /* เพิ่มระยะห่างจากด้านบนเล็กน้อย */
+    color: white;
+  }
+.logohotel h1 {
+    padding: 0;
+    margin:0; /* เพิ่มระยะห่างระหว่างข้อความ */
+    font-size: 36px;
+}
+.logohotel p {
+    padding: 0;
+    margin:0; /* เพิ่มระยะห่างระหว่างข้อความ */
+    font-size: 16px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+.midlogo{
+    display: flex;
+    flex-direction: column; /* จัดให้อยู่ในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวนอน */
+    width: 100%;
+    height: 982px;
+    margin-top: 222px;
+
+}  
+.midlogo p{
+    padding : 0;
+    margin : 10px;
+    font-size : 42px;
+    color: white;
+}
+.midlogo img{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    z-index: -2;
+    
+}
+.midlogo::before {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100vh+139px;
+    background-color: rgba(0, 0, 0, 0.6);     /* สีดำโปร่งแสงทับพื้นหลัง */
+    z-index: -1;
+  }
+
+.text-inpired {
+    display: flex;
+    flex-direction: column; /* จัดให้อยู่ในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวนอน */
+    width: 100%; /* ใช้ความกว้างเต็มหน้าจอ */
+    text-align: center;
+    height: 982px;
+    background-color: #FFF8E1; /* สีพื้นหลัง */
+}
+.text-inpired-1{
+    width: 100%;
+    font-size: 18px;
+    position: relative;
+    top: 80px;
+}
+.text-inpired-2{
+    width: 100%;
+    font-size: 24px;
+    position: relative;
+    top: 370px;
+}
+.text-inpired-3{
+    width: 100%;
+    font-size: 18px;
+    position: relative;
+    top: 370px;
+}
+
+.ViewAuailavility{
+    width: 100%;
+    height: 135px;
+    background-color: #E1FFC3;
+}
+
+.defined {
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    height: 1100px; 
+    background-color: #FFF8E1;
+    padding-bottom: 80px;
+}
+.left-defined{
+    flex: 55%; 
+    padding: 50px;
+    padding-right: 0;
+}
+.left-defined img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ทำให้รูปภาพครอบคลุมเต็มพื้นที่โดยไม่ผิดสัดส่วน */
+}
+.right-defined {
+    flex: 45%; 
+    padding: 50px; 
+    padding-left: 0;   
+    padding-top: 30px; 
+    margin: 30px;
+} 
+
+.right-defined p{
+    font-size: 75px;
+    margin: 0;
+} 
+.right-definedp p{
+    font-size: 16px;
+    padding-top: 40px;
+} 
+
+.button-Booknow{
+    width: 390px;
+    height: 65px;
+    margin-top: 40px;
+    background-color: black; /* สีพื้นหลัง */
+    color: white ; /* สีข้อความ */
+    border: none; /* ไม่มีเส้นขอบ */
+    border-radius: 5px; /* มุมโค้งมน */
+    cursor: pointer; /* เปลี่ยนเมาส์เมื่อ hover */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* การเปลี่ยนแปลงแบบนุ่มนวล */ 
+
+}
+
+.hotelCyberVista{
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    height: 982px; 
+    background-color: #FFF8E1;
+    padding: 0;
+    margin:0;
+    
+
+}
+.hotelCyberVista h1{
+    font-size: 70px;
+    padding: 0;
+    margin:0;
+    color: #FFF8E1;
+    margin-bottom: 50px;
+
+
+
+}
+.hotelCyberVista h2{
+    font-size: 20px;
+    color: #FFF8E1;
+    padding: 0;
+    margin:0;
+    margin-top: 150px;
+}
+.hotelCyberVista p{
+    color: #E1FFC3;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+
+}
+.left-hotelCyberVista{
+    flex: 1;
+    margin-right : 10px;
+    display: flex;
+    flex-direction: column; /* จัดให้อยู่ในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวนอน */
+    text-align: center;
+    background-color: #3D2B1F;
+}
+.right-hotelCyberVista{
+    margin-left : 10px;
+    flex: 1;
+}
+.right-hotelCyberVista img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ทำให้รูปภาพครอบคลุมเต็มพื้นที่โดยไม่ผิดสัดส่วน */
+}
+
+.multi-border-button {
+    position: relative;
+    display: inline-block;
+    height: 66px;
+    width: 594px;
+    padding: 10px 20px;
+    color: #f4f4d7; /* สีของข้อความ */
+    background-color: #3b2c22; /* สีพื้นหลัง */
+    font-family: 'Merriweather', serif; 
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 2px solid #e0e0a0; /* สีของกรอบหลัก */
+    box-shadow: 0 0 0 2xpx #3b2c22; /* กรอบที่สอง */
+    margin: 20px;
+  }
+  
+  .multi-border-button::before,
+  .multi-border-button::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 2px solid #e0e0a0; /* สีของกรอบ */
+    pointer-events: none;
+  }
+  
+  .multi-border-button::after {
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+    border: 2px solid #e0e0a0; /* สีของกรอบชั้นนอก */
+  }
+  
+
+.bang{
+    background-color: #FFF8E1;
+    width: 100%;
+    height: 150px;
+}
+
+.CafeandClubs{
+    display: flex; 
+    flex-direction: row;
+    position: relative;
+    padding: 0;
+    margin:0;
+    background: url('/public/image/CafeandClubs.jpg') no-repeat center center fixed; /* ตั้งค่าพื้นหลังเป็นรูปภาพ */
+    background-size: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมด */
+    z-index: 2;
+    width: 100%;
+    height: 982px;
+}
+.CafeandClubs::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 982px;
+    background-color: rgba(0, 0, 0, 0.6);     /* สีดำโปร่งแสงทับพื้นหลัง */
+    z-index: -1;
+}
+.left-CafeandClubs{
+display: flex;
+flex: 1;
+flex-direction: column; /* จัดให้อยู่ในแนวตั้ง */
+align-items: center; /* จัดให้อยู่กึ่งกลางในแนวนอน */
+justify-content: center;
+text-align: center;
+color: #E1FFC3;
+
+
+}
+.right-CafeandClubs{
+    display: flex;
+    flex: 1;
+    flex-direction: column; /* จัดให้อยู่ในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวนอน */
+    justify-content: center;
+    text-align: center;
+    color: #E1FFC3;
+}
+
+.CafeandClubs h1{
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.CafeandClubs p{
+    font-size: 16px;
+    margin: 0;
+    margin: 60px 60px;
+    padding: 0;
+}
+
+.left-CafeandClubs h6{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.astraea {
+    flex: 1;
+    display: flex;
+    flex-direction: row; /* จัดให้อยู่ในแนวตั้ง */
+    width: 100%;
+    height: 982px; 
+    background-color: #FFF8E1;
+}
+.left-astraea{
+    flex: 45%; 
+    padding: 50px;
+}
+.left-astraea h1{
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    color: #FFD700;
+    text-align: center;
+}
+.left-astraea p{
+    font-size: 16px;
+    margin: 0;
+    margin: 60px 60px;
+    padding: 0;
+    color: #D4AF37;
+}
+.left-astraea h6{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    color: #FFD700;
+    text-align: center;
+}
+
+.right-astraea img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ทำให้รูปภาพครอบคลุมเต็มพื้นที่โดยไม่ผิดสัดส่วน */
+}
+.right-astraea {
+    flex: 55%; 
+   padding: 50px; 
+    padding-left: 0;    
+} 
+
+.astraea-border-button {
+    position: relative;
+    display: inline-block;
+    height: 66px;
+    width: 594px;
+    padding: 10px 20px;
+    color: black; /* สีของข้อความ */
+    background-color: #FFD700; /* สีพื้นหลัง */
+    font-family: 'Merriweather', serif; 
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 2px solid #FFD700; /* สีของกรอบหลัก */
+    box-shadow: 0 0 0 2xpx black; /* กรอบที่สอง */
+    margin: 20px;
+}
+
+.astraea-border-button::before,
+.astraea-border-button::after {
+content: "";
+position: absolute;
+top: -8px;
+left: -8px;
+right: -8px;
+bottom: -8px;
+border: 2px solid black; /* สีของกรอบ */
+pointer-events: none;
+}
+
+.astraea-border-button::after {
+top: -12px;
+left: -12px;
+right: -12px;
+bottom: -12px;
+border: 2px solid black; /* สีของกรอบชั้นนอก */
+}
+
+
+
+
+.swimmingpool {
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    height: 982px; 
+    background-color: #FFF8E1;
+    padding-bottom: 80px;
+}
+.right-swimmingpool{
+    flex: 1; 
+    background: linear-gradient(to bottom, #0000FF, #0040FF, #007FFF);
+    margin-left: 20px;
+}
+
+.right-swimmingpool h1{
+    position: relative;
+    top: 100px;
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    color: #FFD700;
+    text-align: center;
+
+}
+.right-swimmingpool p{
+    position: relative;
+    top: 100px;
+    font-size: 16px;
+    margin: 0;
+    margin: 60px 60px;
+    padding: 0;
+    color: #D4AF37;
+
+}
+.right-swimmingpool h6{
+    position: relative;
+    top: 100px;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    color: #FFD700;
+    text-align: center;
+
+
+}
+.left-swimmingpool img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ทำให้รูปภาพครอบคลุมเต็มพื้นที่โดยไม่ผิดสัดส่วน */
+}
+.left-swimmingpool {
+    flex: 1; 
+} 
+
+.fitness {
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    height: 1100px; 
+    background-color: #FFF8E1;
+    padding-bottom: 80px;
+}
+.left-fitness{
+    flex: 55%; 
+    padding: 50px;
+    padding-right: 0;
+    
+}
+.left-fitness img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ทำให้รูปภาพครอบคลุมเต็มพื้นที่โดยไม่ผิดสัดส่วน */
+}
+.right-fitness {
+    flex: 45%; 
+    padding: 50px; 
+    padding-left: 0;   
+    padding-top: 30px; 
+    margin: 30px;
+} 
+
+.right-fitness p{
+    font-size: 75px;
+    margin: 0;
+    
+} 
+.right-fitnesss p{
+    font-size: 16px;
+    padding-top: 40px;
+} 
+
+
+
+
+.footer{
+    font-family: 'Merriweather', serif;
+    width: 100%;
+    height: 982px;
+    background-color: #E1FFC3;
+    margin: 0;
+    padding: 0;
+}
+
+.container-footer {
+    margin: 0 ;
+    padding: 20px;
+}
+
+.header-footer{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.image-footer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.image-footer img {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+}
+
+.footerr {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerr .contact-info, .footer .links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footerr .social-icons {
+    display: flex;
+    gap: 10px;
+}
+.footerr .social-icons a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 50px ;
+}
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+.login-container {
+  max-width: 500px; /* เพิ่มขนาดความกว้าง */
+  width: 100%; /* ทำให้ฟอร์มตอบสนองขนาดหน้าจอ */
+  margin: auto;
+  margin-top: 150px;
+  padding: 100px ; /* เพิ่ม padding เพื่อให้มีพื้นที่ภายในฟอร์มมากขึ้น */
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffffff, #f3f4f6);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+  justify-content: center; /* จัดให้อยู่กึ่งกลางในแนวนอน */
+  min-height: 40vh; /* ทำให้ container ใช้ความสูงเต็มหน้าจอ */
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 15px; /* ปรับเพิ่ม padding ในแนวนอนให้มีพื้นที่มากขึ้น */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+
+.login-form input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.login-button:active {
+  background-color: #004494;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  .login-form input {
+    padding: 10px;
+  }
+
+  .login-button {
+    padding: 10px;
+  }
+}
+
+.register-link-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
